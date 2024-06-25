@@ -1,0 +1,96 @@
+h1,p,body{
+  margin: 0;
+}
+
+p,a{
+  font-size: 20px;
+}
+
+header{
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+header h1{
+  color: rgb(255, 255, 255);
+}
+
+main{
+  padding: 10px;
+}
+
+/*id名parentのスタイル*/
+#parent{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*class名contentのスタイル*/
+.contents{
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/*h2要素のスタイル*/
+.contents h2{
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+.content h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+  margin-right:5px;
+}
+/*class名contents内の二番目のp要素内のスタイル*/
+.contents p:nth-of-type(2)
+span:first-letter{
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+/*class名contents内のimg要素スタイル*/
+.contents img{
+  margin: 10px 0;
+  width: 70%;
+}
+
+/*footer内のスタイル*/
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+  padding: 10px　0;
+}
+
+/*footer内のa要素*/
+footer a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a:visited{
+  color: rgb(193, 234, 251);
+}
+
+footer a:hover{
+  color: rgb(245, 178, 168);
+}
+
+/*レスポンスデザイン.画面幅768px以下のスタイル*/
+@media(max-width:768px){
+  h2{
+    font-size: 30px;
+  }
+
+p{
+  font-size: 25px;
+}
+
+#parent{
+  flex-direction: column;
+}
+}
+
